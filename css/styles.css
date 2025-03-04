@@ -672,14 +672,19 @@ h1 {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-btn:hover .close-icon {
+.close-btn:hover .close-icon,
+.close-btn:focus .close-icon {
   fill: #ffffff;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-icon:hover,
-.close-icon:focus {
-  fill: #ffffff;
+.close-btn:hover,
+.close-btn:focus {
+  border: none;
+}
+
+.close-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-btn:hover,
@@ -707,6 +712,7 @@ h1 {
   position: absolute;
   top: 11px;
   left: 16px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-label {
@@ -795,7 +801,7 @@ h1 {
   background-color: transparent;
   margin-right: 8px;
   fill: transparent;
-  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -837,6 +843,7 @@ h1 {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-con-chekbox {
